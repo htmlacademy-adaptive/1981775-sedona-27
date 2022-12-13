@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="/source/img/logo-sedona.svg" alt="Логотип Седона">
+        </a>
+        <button class="header__button">
+          <img src="source/img/burger-menu.svg" alt="Кнопка" class="header__button-image">
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="info">
+    <div class="container">
+      <div class="info__baner">
+        <img src="source/img/text-sedona.svg" alt="Надпись в банере Седона">
+        <img src="source/img/down-img.svg" alt="Нижний скос раздела">
+      </div>
+    </div>
+  </section>
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__item">
+        <h2 class="benefits__item-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p class="benefits__item-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <img src="source/img/down-section.svg" alt="Нижний скос раздела">
+      </div>
+      <div class="benefits__item-list">
+        <div class="benefits__item-list-item">
+          <h2 class="benefits__item-list-item-title">НАСТОЯЩИЙ ГОРОДОК</h2>
+          <p class="enefits__item-list-item-namber">-№1-</p>
+          <p class="benefits__item-list-item-text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <img src="source/img/photo-city.jpg" alt="Фото города ">
+        </div>
+        <div class="benefits__item-list-item">
+          <img class="benefits__item-list-item-img" src="source/img/icon-house.svg" alt="Дом">
+          <h2 class="benefits__item-list-item-title">ЖИЛЬЕ</h2>
+          <p class="benefits__item-list-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <img class="benefits__item-list-item-img" src="source/img/icon-burger.svg" alt="еда">
+          <h2 class="benefits__item-list-item-title">ЕДА</h2>
+          <p class="benefits__item-list-item-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <img class="benefits__item-list-item-img" src="source/img/icon-gift.svg" alt="сувениры">
+          <h2 class="benefits__item-list-item-title">СУВЕНИРЫ</h2>
+          <p class="benefits__item-list-item-text">Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <h2 class="benefits__item-list-item-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+          <p class="enefits__item-list-item-namber">-№2-</p>
+          <p class="benefits__item-list-item-text">ДА ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ,КОНЕЧНО</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <img src="/source/img/photo-bridge.jpg" alt="Фото коньена ">
+        </div>
+        <div class="benefits__item-list-item">
+          <h2 class="benefits__item-list-item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+          <p class="enefits__item-list-item-namber">-№3-</p>
+          <p class="benefits__item-list-item-text">ВСЕ ИНТЕРЕСУЮЩИЕ МЕСТА НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <h2 class="benefits__item-list-item-title">КРАСИВАЯ ДОРОГА</h2>
+          <p class="enefits__item-list-item-namber">-№4-</p>
+          <p class="benefits__item-list-item-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+        </div>
+        <div class="benefits__item-list-item">
+          <h2 class="benefits__item-list-item-title">МАЛОО ТУРИСТОВ</h2>
+          <p class="enefits__item-list-item-namber">-№5-</p>
+          <p class="benefits__item-list-item-text">БОЛЬШЕНСТВО ЕДЕТ В ГРАНТ КОНЬЕН И ТОЛПИТЬСЯ ТАМ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="interested">
+    <div class="container">
+      <div class="interested-item">
+        <h2 class="interested-item-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="interested-item-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в седоне</p>
+        <button class="interested-item-button">НАЙТИ ГОСТИНИЦУ</button>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div class="container">
+      <map name="Седона ">
+        <img src="source/img/map-mobile.svg" alt="map">
+      </map>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__list">
+        <h2 class="footer__list-title">#VISITSEDONA</h2>
+        <div class="footer__list-item">
+          <img class="footer__list-item-vk" src="source/img/vk.svg" alt="vk">
+          <img class="footer__list-item-telegram"  src="source/img/telegram.svg" alt="telegram">
+          <img class="footer__list-item-youtube" src="source/img/youtube.svg" alt="youtube">
+        </div>
+        <div class="footer__list-item">
+          <p class="footer__list-item-text">Разработано</p>
+          <img src="source/img/htmlacademy.svg" alt="htmlacademy">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
