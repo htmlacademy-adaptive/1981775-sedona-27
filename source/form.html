@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: form</title>
 </head>
 
@@ -83,7 +84,7 @@
           <ul class="form__list form__list-info">
             <li class="form__list-info-item">
               <label for="phone" class="info-phone ">Контактный телефон*:</label>
-              <input id="phone" type="text" class="form__input form__input--phone" placeholder="Введите телефон">
+              <input id="phone" type="text" class="form__input form__input--phone" placeholder="Введите телефон ">
             </li>
             <li class="form__list-info-item">
               <label for="mail" class="info-mail ">Элекстронная почта*:</label>
@@ -113,20 +114,20 @@
           <ul class="form__list form__list-checkbox">
             <li class="form__item checkbox">
               <input type="checkbox" class="form__input form__input--checkbox" name="landmark" value="devil" id="devil">
-              <label for="devil">Мост дьявола</label>
+              <label class="checkbox_label" for="devil">Мост дьявола</label>
             </li>
             <li class="form__item checkbox">
               <input type="checkbox" class="form__input form__input--checkbox" name="landmark" value="bell" id="bell">
-              <label for="bell">Гора колокол</label>
+              <label class="checkbox_label" for="bell">Гора колокол</label>
             </li>
             <li class="form__item checkbox">
               <input type="checkbox" class="form__input form__input--checkbox" name="landmark" value="park" id="park">
-              <label for="park">Слайд парк</label>
+              <label class="checkbox_label" for="park">Слайд парк</label>
             </li>
             <li class="form__item checkbox">
               <input type="checkbox" class="form__input form__input--checkbox" name="landmark" value="red-rocks"
                 id="red-rocks">
-              <label for="red-rocks">Красные скалы</label>
+              <label class="checkbox_label" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
@@ -135,8 +136,10 @@
           <textarea name="" id="" cols="30" rows="10" class="form__textarea"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
+        <div class="wraper">
         <button class="form__submit-button button" type="submit">Отправить отзыв</button>
         <div class="form__notation">* - обязательное поле</div>
+      </div>
       </form>
     </div>
   </section>
