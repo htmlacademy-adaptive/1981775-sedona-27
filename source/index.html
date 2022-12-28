@@ -4,113 +4,98 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="#" class="header__logo">
-          <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
-        </a>
-        <button class="header__button">
-          <img src="./img/burger-menu.svg" alt="button">
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a class="site-list__link ">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link " href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link " href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link " href="https://www.htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <a href="#" class="header__logo">
+      <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__button" aria-label="Открыть\закрыть меню"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item ">
+          <a class="site-list__link ">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://www.htmlacademy.ru/">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <section class="info">
-    <div class="container">
-      <div class="info__baner">
-        <img src="./img/text-sedona.svg" alt="Надпись в банере Седона">
-      </div>
-    </div>
+    <img src="./img/text-sedona.svg" alt="Надпись в банере Седона" width="282" height="214">
   </section>
   <section class="benefits">
-    <div class="container">
-      <div class="benefits__item">
-        <h2 class="benefits__item-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-        <p class="benefits__item-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <div class="benefits-container">
+      <div class="benefits__top">
+        <h2 class="benefits__top-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p class="benefits__top-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <ul class="benefits__item-list">
-        <li class="benefits__item-list-item">
-          <ul class="benefits__item-list-item-devision">
-            <li class="benefits__item-list-item-devision-item blue">
-              <h2 class="benefits__item-list-item-title blue-title">НАСТОЯЩИЙ ГОРОДОК</h2>
-              <p class="benefits__item-list-item-namber blue-namber">-№1-</p>
-              <p class="benefits__item-list-item-text  blue-text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ
-                ЖИЗНЬ</p>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <div class="benefits__wrapper">
+            <h3 class="benefits__item-title blue-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="benefits__item-namber blue-namber">-№1-</p>
+            <p class="benefits__item-text  blue-text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+          <div class="benefits__img-container">
+            <img class="benefits__img" src="./img/photo-city.jpg" width="320px" alt="Фото города ">
+          </div>
+          <ul class="benefits__sublist sublist">
+            <li class="sublist__item sublist__item--housing">
+              <h4 class="sublist__title">ЖИЛЬЕ</h4>
+              <p class="sublist__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="benefits__item-list-item-devision-item">
-              <img src="./img/photo-city.jpg" width="320px" alt="Фото города ">
+            <li class="sublist__item sublist__item--food">
+              <h4 class="sublist__title">ЕДА</h4>
+              <p class="sublist__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </li>
-            <li class="benefits__item-list-item-devision-item">
-              <h2 class="benefits__item-list-item-devision-title housing">ЖИЛЬЕ</h2>
-              <p class="benefits__item-list-item-devision-text">Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
-            </li>
-            <li class="benefits__item-list-item-devision-item">
-              <h2 class="benefits__item-list-item-devision-title eat">ЕДА</h2>
-              <p class="benefits__item-list-item-devision-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
-                разочаруетесь!</p>
-            </li>
-            <li class="benefits__item-list-item-devision-item">
-              <h2 class="benefits__item-list-item-devision-title souvenir">СУВЕНИРЫ</h2>
-              <p class="benefits__item-list-item-devision-text">Не только китайского, но и местного производства!</p>
+            <li class="sublist__item sublist__item--souvenir">
+              <h4 class="sublist__title">СУВЕНИРЫ</h4>
+              <p class="sublist__text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
-        <li class="benefits__item-list-item">
-          <ul class="benefits__item-list-item-section">
-            <li class="benefits__item-list-item-section-item blue">
-              <h2 class="benefits__item-list-item-title blue-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
-              <p class="enefits__item-list-item-namber blue-namber">-№2-</p>
-              <p class="benefits__item-list-item-text blue-text">ДА ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ,КОНЕЧНО</p>
-            </li>
-            <li class="benefits__item-list-item-section-item">
-              <img src="./img/photo-bridge.jpg" alt="Фото коньена ">
-            </li>
-          </ul>
-        <li class="benefits__item-list-item">
-          <h2 class="benefits__item-list-item-title-item">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-          <p class="enefits__item-list-item-namber-item">-№3-</p>
-          <p class="benefits__item-list-item-text-item">ВСЕ ИНТЕРЕСУЮЩИЕ МЕСТА НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
         </li>
-        <li class="benefits__item-list-item">
-          <h2 class="benefits__item-list-item-title-item">КРАСИВАЯ ДОРОГА</h2>
-          <p class="enefits__item-list-item-namber-item">-№4-</p>
-          <p class="benefits__item-list-item-text-item">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+        <li class="benefits__item">
+          <div class="benefits__wrapper">
+            <h2 class="benefits__item-title blue-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+            <p class="benefits__item-namber blue-namber">-№2-</p>
+            <p class="benefits__item-text blue-text">ДА ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ,КОНЕЧНО</p>
+          </div>
+          <div class="benefits__img-container">
+            <img src="./img/photo-bridge.jpg" alt="Фото коньена ">
+          </div>
         </li>
-        <li class="benefits__item-list-item">
-          <h2 class="benefits__item-list-item-title-item">МАЛОО ТУРИСТОВ</h2>
-          <p class="enefits__item-list-item-namber-item">-№5-</p>
-          <p class="benefits__item-list-item-text-item">БОЛЬШЕНСТВО ЕДЕТ В ГРАНТ КОНЬЕН И ТОЛПИТЬСЯ ТАМ</p>
+        <li class="benefits__item grei">
+          <h2 class="benefits__item-title grei-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+          <p class="benefits__item-namber grei-namber">-№3-</p>
+          <p class="benefits__item-text  grei-text">ВСЕ ИНТЕРЕСУЮЩИЕ МЕСТА НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
+        </li>
+        <li class="benefits__item grei">
+          <h2 class="benefits__item-title grei-title">КРАСИВАЯ ДОРОГА</h2>
+          <p class="benefits__item-namber grei-namber">-№4-</p>
+          <p class="benefits__item-text  grei-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+        </li>
+        <li class="benefits__item grei">
+          <h2 class="benefits__item-title grei-title">МАЛОО ТУРИСТОВ</h2>
+          <p class="benefits__item-namber grei-namber">-№5-</p>
+          <p class="benefits__item-text  grei-text">БОЛЬШЕНСТВО ЕДЕТ В ГРАНТ КОНЬЕН И ТОЛПИТЬСЯ ТАМ</p>
         </li>
       </ul>
     </div>

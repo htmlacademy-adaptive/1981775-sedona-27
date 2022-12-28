@@ -1,0 +1,52 @@
+.sublist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sublist__item {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 25px;
+}
+
+.sublist__item::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-house.svg");
+  height: 39px;
+  width: 37px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0;
+  top: 0;
+}
+
+.sublist__item--food::before {
+  background-image: url("../img/icon-burger.svg");
+}
+
+.sublist__item--souvenir::before {
+  background-image: url("../img/icon-gift.svg");
+}
+
+.sublist__title {
+  padding: 8px 0 0 0;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.sublist__text {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  width: 245px;
+}
+
