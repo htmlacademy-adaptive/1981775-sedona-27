@@ -1,17 +1,15 @@
 .foto__catalog-title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   padding: 37px 0 30px;
+
 }
 
+
 .foto__catalog-text {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -24,6 +22,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .foto__catalog-iner {
@@ -36,21 +37,19 @@
 }
 
 .foto__catalog-list-title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 15px 0 15px;
+  padding-top: 15px;
+  margin: 0;
 }
 
 .foto__catalog-list-text {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  margin: 0;
 }
 
 .foto__catalog-list-like::before {
@@ -59,7 +58,6 @@
   background-image: url(../img/catalog/like-icon.svg);
   width: 23px;
   height: 21px;
-  background-color: #000000;
   opacity: 0.3;
 }
 
@@ -71,4 +69,12 @@
   display: flex;
   gap: 14px;
   padding: 16px 0 24px;
+}
+
+.foto__catalog-iner {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
