@@ -13,14 +13,14 @@
 
 <body class="page-body">
   <header class="header">
-    <a href="#" class="header__logo">
+    <a href="index.html" class="header__logo">
       <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__button" aria-label="Открыть\закрыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item ">
-          <a class="site-list__link ">
+          <a class="site-list__link" href="index.html">
             Главная
           </a>
         </li>
@@ -80,12 +80,12 @@
           <fieldset class="form__group">
             <legend class="form__legend">Контактная информация</legend>
             <ul class="form__list form__list-info">
-              <li class="form__list-info-item">
-                <label for="phone" class="info-phone info-position">Контактный телефон*:</label>
+              <li class="form__list-info-item form__info">
+                <label for="phone" class="form__info-phone">Контактный телефон*:</label>
                 <input id="phone" type="text" class="form__input form__input--phone" placeholder="Введите телефон ">
               </li>
-              <li class="form__list-info-item">
-                <label for="mail" class="info-mail info-position">Элекстронная почта*:</label>
+              <li class="form__list-info-item form__info">
+                <label for="mail" class="form__info-mail">Элекстронная почта*:</label>
                 <input id="mail" type="text" class="form__input form__input--mail" placeholder="Введите e-mail">
               </li>
             </ul>
@@ -136,7 +136,7 @@
             <textarea name="" id="" cols="30" rows="10" class="form__textarea"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="wraper">
+          <div class="form__wraper">
             <button class="form__submit-button button" type="submit">Отправить отзыв</button>
             <div class="form__notation">* - обязательное поле</div>
           </div>
@@ -148,7 +148,7 @@
     <div class="container">
       <div class="footer__list">
         <h2 class="footer__list-title footer__list-title--position">#VISITSEDONA</h2>
-        <ul class="main-footer__social social">
+        <ul class="social__main-footer social">
           <li class="social__item button button--change-state">
             <span class="visually-hidden">
               Мы в Вконтакте
