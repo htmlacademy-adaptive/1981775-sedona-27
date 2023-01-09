@@ -45,11 +45,15 @@
 
   <main>
     <section class="catalog-info">
-      <div class="container">
         <div class="catalog-info__baner">
-          <img class="catalog-info__baner-img" src="./img/catalog/SEDONA.svg" alt="Надпись в банере Седона">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1400px)" srcset="./img/desktop/text-sedona1x.svg 1x, ./img/desktop/text-sedona2x.svg 2x">
+              <source media="(min-width: 768px)" srcset="./img/tablet/sedona1x.svg 1x ./img/tablet/sedona2x.svg 2x">
+              <img class="catalog-info__baner-img" src="./img/mobile/sedona1x.svg" srcset="./img/mobile/sedona2x.svg 2x" alt="Надпись Седона ">
+            </picture>
+          </a>
         </div>
-      </div>
     </section>
     <section class="review">
       <div class="review-container">
@@ -59,37 +63,39 @@
             достопримечательностях</p>
         </div>
         <form class="feetback-form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group">
-            <legend class="form__legend">Представтесь":</legend>
-            <ul class="form__list">
-              <li class="form__item input-text">
-                <label for="name" class="input-text__label">Имя*:</label>
-                <input id="name" type="text" class="input-text__input" name="name" placeholder="Петр" required>
-              </li>
-              <li class="form__item input-text">
-                <label for="surname" class="input-text__label">Фамилия*:</label>
-                <input id="surname" type="text" class="input-text__input" name="surname" placeholder="Пустота" required>
-              </li>
-              <li class="form__item input-text">
-                <label for="middlename" class="input-text__label">Отчество*:</label>
-                <input id="middlename" type="text" class="input-text__input" name="middlename" placeholder="Викторович"
-                  required>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__legend">Контактная информация</legend>
-            <ul class="form__list form__list-info">
-              <li class="form__list-info-item form__info">
-                <label for="phone" class="form__info-phone">Контактный телефон*:</label>
-                <input id="phone" type="text" class="form__input form__input--phone" placeholder="Введите телефон ">
-              </li>
-              <li class="form__list-info-item form__info">
-                <label for="mail" class="form__info-mail">Элекстронная почта*:</label>
-                <input id="mail" type="text" class="form__input form__input--mail" placeholder="Введите e-mail">
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__container-top">
+            <fieldset class="form__group">
+              <legend class="form__legend">Представтесь:</legend>
+              <ul class="form__list">
+                <li class="form__item input-text">
+                  <label for="name" class="input-text__label">Имя*:</label>
+                  <input id="name" type="text" class="input-text__input" name="name" placeholder="Петр" required>
+                </li>
+                <li class="form__item input-text">
+                  <label for="surname" class="input-text__label">Фамилия*:</label>
+                  <input id="surname" type="text" class="input-text__input" name="surname" placeholder="Пустота" required>
+                </li>
+                <li class="form__item input-text">
+                  <label for="middlename" class="input-text__label">Отчество*:</label>
+                  <input id="middlename" type="text" class="input-text__input" name="middlename" placeholder="Викторович"
+                    required>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group">
+              <legend class="form__legend">Контактная информация:</legend>
+              <ul class="form__list form__list-info">
+                <li class="form__list-info-item form__info">
+                  <label for="phone" class="form__info-phone">Контактный телефон*:</label>
+                  <input id="phone" type="text" class="form__input form__input--phone" placeholder="Введите телефон ">
+                </li>
+                <li class="form__list-info-item form__info">
+                  <label for="mail" class="form__info-mail">Элекстронная почта*:</label>
+                  <input id="mail" type="text" class="form__input form__input--mail" placeholder="Введите e-mail">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__group">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__list form__list-radio">

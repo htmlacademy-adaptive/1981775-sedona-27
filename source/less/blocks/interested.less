@@ -1,6 +1,4 @@
 .interested-item-title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 21px;
   text-align: center;
@@ -8,19 +6,18 @@
 }
 
 .interested-item-text {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #333333;
   width: 243px;
+  @media (min-width: 768px) {
+    width: 435px;
+  }
 }
 
 .interested-item-button {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 21px;
   color: #FFFFFF;
@@ -31,6 +28,9 @@
   padding: 16px;
   width: 284px;
   text-align: center;
+  @media (min-width: 768px) {
+    width: 458px;
+  }
 
 }
 .interested-item {
@@ -42,4 +42,7 @@
 .interested-container {
   margin: 0 auto;
   width: 320px;
+  @media (min-width: 768px) {
+    width: 768px;
+  }
 }

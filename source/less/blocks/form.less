@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+
 }
+
 
 .form__item {
   margin-bottom: 20px;
@@ -62,12 +65,16 @@
 
 .form__input {
   //background: #F2F2F2;
- // z-index: 10;
+  // z-index: 10;
 }
 
 .form__group {
   border: none;
   border-bottom: solid 1px #E5E5E5;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }
 
 .form__group:nth-child(5) {
@@ -113,4 +120,29 @@
 
 .form__textarea {
   resize: none;
+}
+
+.form__container-top {
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 88px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 128px;
+  }
+}
+
+.form__list-radio,
+.form__list-checkbox {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    gap: 49px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }

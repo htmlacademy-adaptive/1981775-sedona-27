@@ -1,5 +1,14 @@
 .blue {
   background-color: #81b3d2;
+
+  @media (min-width: 768px) {
+    padding: 52px 33px 31px 33px;
+    margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 52px 50px 51px 52px;
+  }
 }
 
 .blue__title {
@@ -8,7 +17,8 @@
   color: #ffffff;
   text-align: center;
   padding-bottom: 11px;
-  padding-top: 33px;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .blue__number {
@@ -17,14 +27,23 @@
   color: #ffffff;
   text-align: center;
   padding-bottom: 17px;
+  margin: 0;
 }
 
 .blue__text {
   font-weight: 400;
   font-size: 14px;
-  padding-bottom: 40px;
+  padding-bottom: 17px;
   color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
   width: 284px;
+
+  @media (min-width: 768px) {
+    width: 190px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 300px;
+  }
 }

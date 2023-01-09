@@ -43,11 +43,16 @@
     </nav>
   </header>
   <section class="catalog-info">
-    <div class="container">
       <div class="catalog-info__baner">
-        <img class="catalog-info__baner-img" src="./img/catalog/SEDONA.svg" alt="Надпись в банере Седона">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="./img/desktop/text-sedona1x.svg 1x, ./img/desktop/text-sedona2x.svg 2x">
+            <source media="(min-width: 768px)" srcset="./img/tablet/sedona1x.svg 1x ./img/tablet/sedona2x.svg 2x">
+            <img class="catalog-info__baner-img" src="./img/mobile/sedona1x.svg" srcset="./img/mobile/sedona2x.svg 2x" alt="Надпись Седона ">
+          </picture>
+        </a>
       </div>
-    </div>
+  </section>
   </section>
   <section class="foto__catalog">
     <div class="container">

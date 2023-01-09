@@ -2,13 +2,26 @@
   padding: 0;
   margin: 0 auto;
   list-style: none;
+  width: 320px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .sublist__item {
   position: relative;
   padding-left: 48px;
   margin-bottom: 25px;
-}
+  @media (min-width: 768px) {
+    width: 256px;
+    height: 331px;
+    margin: 0;
+    padding: 0;
+    }
+  }
 
 .sublist__item::before {
   content: "";
@@ -20,14 +33,38 @@
   background-position: 0 0;
   left: 0;
   top: 0;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/icon-housebig.svg");
+    height: 77px;
+    width: 77px;
+    top: 39px;
+    left: 83px;
+    padding-top: 60px;
+  }
 }
 
 .sublist__item--food::before {
   background-image: url("../img/icon-burger.svg");
+
+  @media (min-width: 768px) {
+    background-image: url("../img/icon-burgerbig.svg");
+    top: 39px;
+    left: 83px;
+    padding-top: 60px;
+  }
 }
 
 .sublist__item--souvenir::before {
   background-image: url("../img/icon-gift.svg");
+
+  @media (min-width: 768px) {
+    background-image: url("../img/icon-giftbig.svg");
+    top: 39px;
+    left: 83px;
+    padding-top: 60px;
+    height: 77px;
+  }
 }
 
 .sublist__title {
@@ -37,6 +74,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  @media (min-width: 768px) {
+    padding-top: 158px;
+    text-align: center;
+  }
 }
 
 .sublist__text {
@@ -48,5 +89,10 @@
   text-transform: uppercase;
   color: #333333;
   width: 245px;
+  @media (min-width: 768px) {
+    padding-top: 24px;
+    text-align: center;
+    margin: 0 auto;
+    width: 190px;
+  }
 }
-

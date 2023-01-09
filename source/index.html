@@ -40,7 +40,13 @@
   </header>
   <main>
     <section class="info">
-      <img src="./img/text-sedona.svg" alt="Надпись в банере Седона" width="282" height="214">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="./img/desktop/text-index1x.svg 1x, ./img/desktop/text-index2x.svg 2x">
+          <source media="(min-width: 768px)" srcset="./img/desktop/text-index1x.svg 1x ./img/desktop/text-index2x.svg 2x">
+          <img class="info-img" src="./img/mobile/text-index1x.svg" srcset="./img/mobile/text-index2x.svg 2x" alt="Надпись Седона ">
+        </picture>
+      </a>
     </section>
     <section class="benefits">
       <div class="benefits__container">
@@ -50,19 +56,21 @@
         </div>
         <ul class="benefits__list">
           <li class="benefits__item">
-            <div class="benefits__wrapper benefits__wrapper--special blue">
-              <h3 class="benefits__item-title blue__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="benefits__item-number blue__number">-№1-</p>
-              <p class="benefits__item-text  blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            </div>
-            <div class="benefits__img-container">
-              <a href="#">
-                <picture>
-                  <source media="(min-width: 1400px)" srcset="./img/desktop/photo-city1x.jpg 1x, ./img/desktop/photo-city1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/tablet/photo-city1x.jpg 1x, ./img/tablet/photo-city1x.jpg 2x">
-                  <img class="benefits__img" src="./img/mobile/photo-city1x.jpg" srcset="./img/mobile/photo-city2x.jpg 2x" alt="Фото города ">
-                </picture>
-              </a>
+            <div class="benefits__item-container">
+              <div class="benefits__wrapper benefits__wrapper--special blue">
+                <h3 class="benefits__item-title blue__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <p class="benefits__item-number blue__number">-№1-</p>
+                <p class="benefits__item-text  blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+              <div class="benefits__img-container">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1400px)" srcset="./img/desktop/photo-city1x.jpg 1x, ./img/desktop/photo-city1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/photo-city1x.jpg 1x, ./img/tablet/photo-city1x.jpg 2x">
+                    <img class="benefits__img" src="./img/mobile/photo-city1x.jpg" srcset="./img/mobile/photo-city2x.jpg 2x" alt="Фото города ">
+                  </picture>
+                </a>
+              </div>
             </div>
             <ul class="benefits__sublist sublist">
               <li class="sublist__item sublist__item--housing">
@@ -80,7 +88,7 @@
             </ul>
           </li>
           <li class="benefits__item">
-            <div class="benefits__item-container">
+            <div class="benefits__item-container-down">
               <div class="benefits__wrapper blue">
                 <h2 class="benefits__item-title blue__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
                 <p class="benefits__item-number blue__number">-№2-</p>
@@ -91,7 +99,7 @@
                   <picture>
                     <source media="(min-width: 1400px)" srcset="./img/desktop/photo-bridge1x.jpg 1x, ./img/desktop/photo-bridge2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/tablet/photo-bridge1x.jpg 1x, ./img/tablet/photo-bridge2x.jpg 2x">
-                    <img  src="./img/mobile/photo-bridge1x.jpg" srcset="./img/mobile/photo-bridge2x.jpg" alt="Фото коньена">
+                    <img class="benefits__img"src="./img/mobile/photo-bridge1x.jpg" srcset="./img/mobile/photo-bridge2x.jpg" alt="Фото коньена">
                   </picture>
                 </a>
               </div>
@@ -140,7 +148,6 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
       <div class="footer__list">
         <h2 class="footer__list-title footer__list-title--position">#VISITSEDONA</h2>
         <ul class="social__main-footer social">
