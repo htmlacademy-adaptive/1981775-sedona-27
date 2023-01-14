@@ -20,8 +20,11 @@
 }
 
 .footer__list-title--position {
-  padding-top: 28px;
+  padding-top: 34px;
   padding-bottom: 33px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
 
 }
@@ -29,21 +32,29 @@
 .footer__list-item {
   padding-bottom: 28px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
 .footer__list {
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     width: 768px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 132px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+.footer__list-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }

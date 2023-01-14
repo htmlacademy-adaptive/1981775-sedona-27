@@ -1,25 +1,33 @@
 .catalog-info__baner {
-  background-image: url(../img/catalog/back-desktop.png);
+  background-image: url("../img/catalog/back-desktop.png");
   background-position: center;
   background-size: cover;
   height: 214px;
   padding-top: 68px;
-  display: flex;
+  text-align: center;
 }
 
 .catalog-info__baner-img {
   align-items: center;
   justify-content: center;
   margin: 0% auto;
-  Width: 229px;
-  Height: 39px;
-
+  width: 229px;
+  height: 39px;
 }
 
 .catalog-info::after {
   content: "";
   display: block;
-  background-image: url(./img/catalog/down-img.svg);
-  height: 100%;
+  background-image: url("./img/down-img.svg");
+  height: 57px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.catalog-info {
+  position: relative;
 }

@@ -5,6 +5,12 @@
   padding-bottom: 40px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    width: 445px;
+  }
 }
 
 .video__list-text {
@@ -14,10 +20,38 @@
   padding-bottom: 38px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    padding-bottom: 15px;
+  }
 }
 
-.video-container {
-  width: 280px;
+.video__list-button {
+  background-image: url("../img/play.svg");
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  width: 48px;
+  height: 52px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  //opacity: 0.5;
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__list-img {
+  width: 100%;
+}
+
+.video__list {
+  text-align: center;
   margin: 0 auto;
-  padding-top: 15px;
 }

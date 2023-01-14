@@ -2,7 +2,16 @@
   font-weight: 700;
   font-size: 21px;
   text-align: center;
-  padding: 61px 0 20px;
+  padding: 29px 0 20px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 60px;
+    padding-bottom: 31px
+  }
 }
 
 .interested-item-text {
@@ -11,10 +20,18 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
-  width: 243px;
-  @media (min-width: 768px) {
+  width: 263px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
     width: 435px;
+    padding-bottom: 8px;
   }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 16px;
+  }
+
 }
 
 .interested-item-button {
@@ -28,11 +45,13 @@
   padding: 16px;
   width: 284px;
   text-align: center;
-  @media (min-width: 768px) {
+
+  @media (min-width: @tablet-width) {
     width: 458px;
   }
 
 }
+
 .interested-item {
   display: flex;
   flex-direction: column;
@@ -42,7 +61,11 @@
 .interested-container {
   margin: 0 auto;
   width: 320px;
-  @media (min-width: 768px) {
+
+  @media (min-width: @tablet-width) {
     width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200pxpx;
   }
 }

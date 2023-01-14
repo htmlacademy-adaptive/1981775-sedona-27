@@ -1,24 +1,36 @@
 .blue {
   background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: 768px) {
-    padding: 52px 33px 31px 33px;
+  @media (min-width: @tablet-width) {
     margin: 0;
+    width: 33.3%;
   }
 
-  @media (min-width: 1200px) {
-    padding: 52px 50px 51px 52px;
+  @media (min-width: @desktop-width) {
+    //padding: 52px 50px 51px 52px;
   }
 }
 
 .blue__title {
   font-weight: 700;
   font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
   text-align: center;
   padding-bottom: 11px;
-  padding-top: 10px;
+  padding-top: 37px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 216px;
+    font-size: 21px;
+    line-height: 26px;
+    width: 150px;
+    padding-top: 51px;
+  }
 }
 
 .blue__number {
@@ -26,24 +38,32 @@
   font-size: 14px;
   color: #ffffff;
   text-align: center;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
 .blue__text {
   font-weight: 400;
   font-size: 14px;
-  padding-bottom: 17px;
+  line-height: 21px;
+  padding-bottom: 40px;
   color: #FFFFFF;
-  text-align: center;
-  margin: 0 auto;
   width: 284px;
+  margin: 0;
+  text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     width: 190px;
   }
 
-  @media (min-width: 1200px) {
-    width: 300px;
+  @media (min-width: @desktop-width) {
+    width: 226px;
+  }
+}
+
+.blue__title--triangle {
+  padding-top: 72px;
+  @media (min-width: @tablet-width) {
+    padding-top: 54px;
   }
 }

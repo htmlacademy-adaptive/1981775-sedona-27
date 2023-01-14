@@ -1,13 +1,19 @@
 .sublist {
   padding: 0;
-  margin: 0 auto;
+  margin: 24px auto 49px;
   list-style: none;
-  width: 320px;
+  width: 285px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background-color: #ffffff;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-around;
   }
 }
 
@@ -15,18 +21,19 @@
   position: relative;
   padding-left: 48px;
   margin-bottom: 25px;
-  @media (min-width: 768px) {
+
+  @media (min-width:  @tablet-width) {
     width: 256px;
     height: 331px;
     margin: 0;
     padding: 0;
-    }
   }
+}
 
 .sublist__item::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("./img/icon-house.svg");
   height: 39px;
   width: 37px;
   background-repeat: no-repeat;
@@ -34,37 +41,47 @@
   left: 0;
   top: 0;
 
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-housebig.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("./img/icon-housebig.svg");
     height: 77px;
     width: 77px;
-    top: 39px;
-    left: 83px;
+    top: 57px;
+    left: 87px;
     padding-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 68px;
   }
 }
 
 .sublist__item--food::before {
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("./img/icon-burger.svg");
 
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-burgerbig.svg");
-    top: 39px;
-    left: 83px;
+  @media (min-width: @tablet-width) {
+    background-image: url("./img/icon-burgerbig.svg");
+    top: 59px;
+    left: 86px;
     padding-top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 62px;
   }
 }
 
 .sublist__item--souvenir::before {
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("./img/icon-gift.svg");
 
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-giftbig.svg");
-    top: 39px;
-    left: 83px;
+  @media (min-width: @tablet-width) {
+    background-image: url("./img/icon-giftbig.svg");
+    top: 61px;
+    left: 96px;
     padding-top: 60px;
     height: 77px;
   }
+
+  //@media (min-width: @desktop-width) {}
 }
 
 .sublist__title {
@@ -74,9 +91,12 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  @media (min-width: 768px) {
+
+  @media (min-width: @tablet-width) {
     padding-top: 158px;
     text-align: center;
+    margin: 0;
+    font-size: 21px;
   }
 }
 
@@ -89,10 +109,11 @@
   text-transform: uppercase;
   color: #333333;
   width: 245px;
-  @media (min-width: 768px) {
+
+  @media (min-width: @tablet-width) {
     padding-top: 24px;
     text-align: center;
     margin: 0 auto;
-    width: 190px;
+    width: 168px;
   }
 }
