@@ -5,6 +5,10 @@
   height: 214px;
   padding-top: 68px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }
 
 .catalog-info__baner-img {
@@ -12,13 +16,17 @@
   justify-content: center;
   margin: 0% auto;
   width: 229px;
-  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    padding-top: 27px;
+  }
 }
 
 .catalog-info::after {
   content: "";
   display: block;
-  background-image: url("./img/down-img.svg");
+  background-image: url("../img/down-image.svg");
   height: 57px;
   width: 100%;
   position: absolute;

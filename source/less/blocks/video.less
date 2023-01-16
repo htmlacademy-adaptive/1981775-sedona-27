@@ -10,12 +10,14 @@
     font-size: 30px;
     line-height: 26px;
     width: 445px;
+    margin: 0 auto;
+    padding-top: 56px;
   }
 }
 
 .video__list-text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   padding-bottom: 38px;
   text-align: center;
@@ -23,7 +25,8 @@
 
   @media (min-width: @tablet-width) {
     width: 445px;
-    padding-bottom: 15px;
+    padding-bottom: 88px;
+    margin: 0 auto;
   }
 }
 
@@ -35,7 +38,7 @@
   background-position: 0 0;
   border: none;
   width: 48px;
-  height: 52px;
+  height: 54px;
   position: absolute;
   cursor: pointer;
   top: 50%;
@@ -43,7 +46,13 @@
   //opacity: 0.5;
 }
 
+
 .video__container {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+    margin: 0 auto;
+  }
   position: relative;
 }
 

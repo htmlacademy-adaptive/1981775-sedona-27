@@ -16,9 +16,15 @@
 
 .images__item {
   border-bottom: solid 1px #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .images__item-first {
+  display: block;
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
@@ -37,7 +43,6 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  padding-top: 15px;
   margin: 0;
 }
 
@@ -45,7 +50,7 @@
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 10px;
   margin: 0;
 }
 
@@ -60,9 +65,11 @@
 
 .images__item-img {
   padding-top: 24px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -86,11 +93,33 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    background-color: #F2F2F2;
+  }
+  @media (min-width: @desktop-width) {
+    position: absolute;
   }
 }
 
 .images__item-img-img {
+  display: block;
+
   @media (min-width: @tablet-width) {
     width: 100%;
+  }
+}
+
+.images__item-container-second {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: 15px;
+  }
+}
+
+.images__item-container-second-like {
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+    padding-top: 28px;
+    padding-bottom: 27px;
   }
 }
