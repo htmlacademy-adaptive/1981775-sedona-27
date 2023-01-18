@@ -14,11 +14,15 @@
     margin: 0;
     padding-top: 64px;
   }
+  @media (min-width: @tablet-width) {
+    padding-top: 114px;
+  }
 }
 
 .review__text {
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
@@ -26,10 +30,13 @@
   border-bottom: solid 1px #E5E5E5;
 
   @media (min-width: @tablet-width) {
-    width: 435px;
+    width: 436px;
     border: none;
     margin: 0;
-    padding-bottom: 88px;
+    padding-bottom: 75px;
+  }
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
   }
 
 }
@@ -46,6 +53,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    // width: 1200px;
+    width: 960px;
   }
 }

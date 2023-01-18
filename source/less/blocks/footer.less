@@ -1,13 +1,4 @@
-.footer__list-item-img::after {
-  content: "";
-  display: block;
-  background-image: url(../img/htmlacademy.svg);
-  width: 27px;
-  height: 34px;
-  background-repeat: no-repeat;
-}
-
-.footer__list-item {
+.footer__academy-link {
   display: flex;
   align-items: center;
   text-align: center;
@@ -49,7 +40,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 201px;
+    height: 313px;
   }
 }
 
@@ -58,4 +49,28 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.footer__academy-link:hover .footer__list-item-text {
+  fill: #000000;
+}
+
+.footer__academy-link:focus .footer__list-item-text {
+  fill: #81b3d2;
+}
+
+.footer__academy-link:active .footer__list-item-text {
+  fill: #b3b3b3;
+}
+
+.footer__academy-link:hover .footer__academy-svg {
+  fill: #000000;
+}
+
+.footer__academy-link:focus .footer__academy-svg {
+  fill: #81b3d2;
+}
+
+.footer__academy-link:active .footer__academy-svg {
+  fill: #b3b3b3;
 }

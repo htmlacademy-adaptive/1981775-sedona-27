@@ -1,10 +1,12 @@
 .input-text {
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .input-text__label {
   font-weight: 400;
+  font-family: "PT Sans";
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -12,7 +14,7 @@
   padding-left: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 4px;
+    padding-left: 16px;
   }
 }
 
@@ -24,18 +26,22 @@
   font-weight: 700;
   font-size: 18px;
   color: #000000;
-
 }
 
 .input-text__input {
   padding: 16px;
   width: 280px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: 0;
 
   @media (min-width: @tablet-width) {
-    padding-top: 16px;
+    padding-top: 21px;
     padding-bottom: 18px;
-    padding-left: 4px;
+    padding-left: 15px;
+    font-family: "PT Sans";
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
   }
 }
