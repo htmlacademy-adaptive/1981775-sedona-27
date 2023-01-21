@@ -61,14 +61,14 @@
       <section class="review">
         <div class="review-container">
           <div class="review__item">
-            <h2 class="review__title">оставте свой отзыв</h2>
+            <h2 class="review__title">оставьте свой отзыв</h2>
             <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
               достопримечательностях</p>
           </div>
           <form class="feetback-form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__container-top">
               <fieldset class="form__group">
-                <legend class="form__legend">Представтесь:</legend>
+                <legend class="form__legend">Представьтесь:</legend>
                 <ul class="form__list">
                   <li class="form__item input-text">
                     <label for="name" class="input-text__label">Имя*:</label>
@@ -124,8 +124,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--landmark">
-              <legend class="form__legend special-title"><span
-                  class="special-title__text">Посещенные
+              <legend class="form__legend special-title"><span class="special-title__text">Посещенные
                   Достoпримечательности:</span></legend>
               <ul class="form__list form__list-checkbox">
                 <li class="form__item checkbox">
@@ -159,7 +158,7 @@
             </fieldset>
             <div class="form__wraper">
               <button class="form__submit-button button" type="submit">Отправить отзыв</button>
-              <div class="form__notation">* - обязательное поле</div>
+              <div class="form__notation">* -- обязательное поля</div>
             </div>
           </form>
         </div>
@@ -205,16 +204,21 @@
       </div>
     </footer>
   </div>
-  <div class="window__section">
-    <h3 class="window__section-title">что-то пошло не так!</h3>
-    <p class="window__section-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="window__section-button">ок</button>
+  <div class="window"><!--Для отрытия окна добавить класс window--show-->
+    <div class="window__section">
+      <h3 class="window__section-title">что-то пошло не так!</h3>
+      <p class="window__section-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="window__section-button">ок</button>
+    </div>
   </div>
-  <div class="window__section-ok">
-    <h3 class="window__section-ok-title">ваш отзыв отправлен!</h3>
-    <p class="window__section-ok-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-    <div class="window__section-ok-container">
-      <button class="window__section-ok-button">закрыть окно</button>
+  <div class="window">
+    <div class="window__section-ok">
+      <h3 class="window__section-ok-title">ваш отзыв отправлен!</h3>
+      <p class="window__section-ok-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+        опубликуем его на сайте.</p>
+      <div class="window__section-ok-container">
+        <button class="window__section-ok-button">закрыть окно</button>
+      </div>
     </div>
   </div>
 </body>

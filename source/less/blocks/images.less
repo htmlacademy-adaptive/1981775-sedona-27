@@ -34,16 +34,26 @@
 .images__item-container-second-title {
   font-weight: 700;
   font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 14px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .images__item-container-second-text {
   font-weight: 400;
   font-size: 12px;
+  line-height: 21px;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 3px;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .images__item-container-second-like::before {
@@ -79,6 +89,7 @@
     padding-right: 20px;
     padding-top: 28px;
     padding-bottom: 27px;
+    gap: 8px;
   }
 }
 
@@ -110,10 +121,13 @@
 
 .images__item-img-img {
   display: block;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    //width: 100%;
   }
+
+  //@media (min-width: @desktop-width) {}
 }
 
 .images__item-container-second {

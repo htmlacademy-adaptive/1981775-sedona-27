@@ -1,23 +1,19 @@
-.footer__academy-link {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-  justify-content: center;
-}
 
 .footer__list-title {
   text-align: center;
 }
 
 .footer__list-title--position {
-  padding-top: 34px;
+  padding-top: 26px;
   padding-bottom: 33px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 36px;
+  }
 }
 
 .footer__list-item {
@@ -35,36 +31,52 @@
     width: 768px;
     margin: 0 auto;
     justify-content: space-around;
-    height: 125px;
+    height: 198px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 313px;
+    height: 286px;
+    gap: 26px;
   }
 }
 
-.footer__list-item-text {
+.footer__academy-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 7px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.footer__academy-svg {
+  fill: #000000;
 }
 
 .footer__academy-link:hover .footer__list-item-text {
-  fill: #000000;
+  color: #81b3d2;
 }
 
 .footer__academy-link:focus .footer__list-item-text {
-  fill: #81b3d2;
+  color: #81b3d2;
 }
 
 .footer__academy-link:active .footer__list-item-text {
-  fill: #b3b3b3;
+  color: #b3b3b3;
 }
 
 .footer__academy-link:hover .footer__academy-svg {
-  fill: #000000;
+  fill: #81b3d2;
 }
 
 .footer__academy-link:focus .footer__academy-svg {

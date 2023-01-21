@@ -1,3 +1,19 @@
+.window {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  display: none;
+}
+.window--show {
+  display: flex;
+}
+
 .window__section-title {
   font-family: 'PT Sans';
   font-weight: 700;
@@ -20,7 +36,7 @@
 }
 
 .window__section {
-  display: none;
+  //display: none;
   width: 320px;
   margin: 0 auto;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -70,7 +86,7 @@
 }
 
 .window__section-ok {
-  display: none;
+  //display: none;
   width: 320px;
   margin: 0 auto;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -81,6 +97,7 @@
     width: 640px;
   }
 }
+
 .window__section-ok-title {
   font-family: 'PT Sans';
   font-weight: 700;
@@ -118,9 +135,11 @@
     padding-bottom: 50px;
   }
 }
+
 .window__section-ok-container {
   background: #F2F2F2;
   padding: 20px;
+
   @media (min-width: @tablet-width) {
     padding: 44px;
   }

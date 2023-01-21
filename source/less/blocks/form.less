@@ -18,6 +18,10 @@
   @media (min-width: @tablet-width) {
     padding-left: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 76px;
+  }
 }
 
 .form__info-phone {
@@ -45,8 +49,8 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    padding-top: 3px;
-    padding-left: 15px;
+    padding-top: 2px;
+    padding-left: 17px;
   }
 }
 
@@ -115,6 +119,16 @@
   }
 }
 
+.form__group:nth-child(1)::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    display: block;
+    width: 1px;
+    color: #dbdbdb;
+    position: relative;
+  }
+}
+
 .form__group:nth-child(5) {
   border: none;
 }
@@ -131,10 +145,19 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-top: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-left: 12px;
+    padding-bottom: 26px;
   }
 }
 
+
 .form__submit-button {
+  font-family: "PT Sans",Arial,sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -143,9 +166,14 @@
   color: #ffffff;
   background: #81b3d2;
   padding: 16px;
+  border: none;
 
   @media (min-width: @tablet-width) {
     width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 382px;
   }
 }
 
@@ -159,7 +187,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 13px;
   }
 }
 
@@ -176,7 +208,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width: 768px;
+    justify-content: space-between;;
   }
 }
 
@@ -194,7 +227,7 @@
   @media (min-width: @desktop-width) {
     //gap: 128px;
     width: 960px;
-    margin: 0 auto 24px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -208,9 +241,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    display: flex;
-    justify-content: space-around;
+    //width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 18px;
+    padding-left: 52px;
+    padding-top: 19px;
   }
 }
 
@@ -224,20 +261,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    display: flex;
-    justify-content: space-around;
+    //width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding-top: 33px;
   }
 }
 
 .form__group--impression {
-  margin-bottom: 90px;
+  margin-bottom: 36px;
+  padding-right: 9px;
 }
 
 .form__group--landmark {
-  margin-bottom: 90px;
+  margin-bottom: 51px;
+  padding-right: 12px;
 }
 
 .form__group--emotion {
-  margin-bottom: 90px;
+  margin-bottom: 42px;
+  padding-right: 12px;
 }
