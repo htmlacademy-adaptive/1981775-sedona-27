@@ -34,18 +34,17 @@
     position: absolute;
     width: 22px;
     height: 16px;
-    background-image: url(../img/form/tick.svg);
-    display: block;
+    background-image: url("../img/form/tick.svg");
+    //display: block;
     //border-radius: 50%;
     //background: #000000;
     top: 15px;
     left: 16px;
     display: none;
-
   }
 }
 
-.form__input:checked+.checkbox_label::after {
+.form__input:checked +.checkbox_label::after {
   display: block;
 }
 
