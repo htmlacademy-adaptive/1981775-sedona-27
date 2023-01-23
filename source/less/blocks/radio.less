@@ -1,6 +1,4 @@
 .radio_label {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -28,14 +26,25 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    display: block;
+    //display: block;
     border-radius: 50%;
     background: #000000;
     top: 15px;
     left: 16px;
     display: none;
-
   }
+}
+
+.radio_label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.radio__input:focus + .radio_label::before {
+  background-color: #e5e5e5;
+}
+
+.radio__input:active + .radio_label::before {
+  background-color: #d5d5d5;
 }
 
 .radio__input:checked + .radio_label::after {

@@ -1,21 +1,20 @@
 .info {
-  background-image: url(../img/back-mobile.jpg);
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
   position: relative;
+  padding-top: 90px;
+  text-align: center;
+  padding-bottom: 74px;
+  background-color: #747a81;
 }
 
-.info__baner {
-  height: 389px;
-  padding-top: 90px;
-}
 
 .info::after {
   content: "";
   display: block;
-  background-image: url(../img/down-img.svg);
+  background-image: url("../img/down-image.svg");
   height: 57px;
   width: 100%;
   background-repeat: no-repeat;
@@ -23,4 +22,11 @@
   background-size: cover;
   position: absolute;
   bottom: 0;
+}
+
+.info__img {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }

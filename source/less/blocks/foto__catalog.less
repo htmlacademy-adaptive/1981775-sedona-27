@@ -1,74 +1,68 @@
 .foto__catalog-title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 37px 0 30px;
+  padding: 39px 0 13px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 68px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 99px;
+    padding-bottom: 34px;
+  }
 }
 
 .foto__catalog-text {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   padding-bottom: 25px;
-}
 
-.foto__catalog-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    margin: 0;
+    padding-bottom: 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 86px;
+  }
 }
 
 .foto__catalog-iner {
-  border-bottom: solid 1px #E5E5E5;
-}
-
-.foto__catalog-list-item {
-  border-bottom: solid 1px #E5E5E5;
-
-}
-
-.foto__catalog-list-title {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 15px 0 15px;
-}
-
-.foto__catalog-list-text {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-}
-
-.foto__catalog-list-like::before {
-  content: "";
-  display: block;
-  background-image: url(../img/catalog/like-icon.svg);
-  width: 23px;
-  height: 21px;
-  background-color: #000000;
-  opacity: 0.3;
-}
-
-.foto__catalog-list-item-img {
-  padding-top: 24px;
-}
-
-.foto__catalog-list-like {
+  width: 280px;
   display: flex;
-  gap: 14px;
-  padding: 16px 0 24px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: solid 1px #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+
+.foto__container {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

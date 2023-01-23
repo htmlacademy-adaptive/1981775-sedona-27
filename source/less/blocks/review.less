@@ -1,6 +1,4 @@
 .review__title {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -8,17 +6,55 @@
   color: #000000;
   padding-bottom: 24px;
   padding-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    padding-top: 64px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 114px;
+  }
 }
 
 .review__text {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   padding-bottom: 28px;
-  border-bottom: solid 1px #E5E5E5;
+  border-bottom: solid 1px #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    width: 436px;
+    border: none;
+    margin: 0;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+    padding-top: 4px;
+  }
 }
 
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}

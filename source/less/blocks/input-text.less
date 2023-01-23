@@ -1,0 +1,61 @@
+.input-text {
+  //display: flex;
+  //flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input-text__label {
+  font-weight: 400;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 16px;
+  }
+}
+
+.input-text__label--indent {
+  padding-top: 24px;
+}
+
+.input-text__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+.input-text__input {
+  padding: 16px;
+  width: 280px;
+  background: #f2f2f2;
+  border: 0;
+
+  &:hover {
+    background-color: red;
+  }
+
+  &:focus {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 21px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+}
