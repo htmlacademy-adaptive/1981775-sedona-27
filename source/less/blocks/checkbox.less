@@ -44,10 +44,22 @@
   }
 }
 
-.form__input:checked +.checkbox_label::after {
+.form__input:checked + .checkbox_label::after {
   display: block;
 }
 
 .form__input--checkbox {
   display: none;
+}
+
+.checkbox_label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:focus + .radio_label::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:active + .radio_label::before {
+  background-color: #d5d5d5;
 }
