@@ -1,4 +1,4 @@
-.radio_label {
+.radio__label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -26,7 +26,6 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    //display: block;
     border-radius: 50%;
     background: #000000;
     top: 15px;
@@ -35,18 +34,18 @@
   }
 }
 
-.radio_label:hover::before {
+.radio__label:hover::before {
   background-color: #e5e5e5;
 }
 
-.radio__input:focus + .radio_label::before {
+.radio__input:focus + .radio__label::before {
   background-color: #e5e5e5;
 }
 
-.radio__input:active + .radio_label::before {
+.radio__input:active + .radio__label::before {
   background-color: #d5d5d5;
 }
 
-.radio__input:checked + .radio_label::after {
+.radio__input:checked + .radio__label::after {
   display: block;
 }

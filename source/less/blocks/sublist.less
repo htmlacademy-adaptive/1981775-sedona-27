@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #ffffff;
     margin: 0;
   }
@@ -23,8 +23,6 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    width: 256px;
-    height: 331px;
     margin: 0;
     padding: 0;
   }
@@ -43,15 +41,16 @@
   top: 0;
 
   @media (min-width: @tablet-width) {
-    height: 77px;
+    height: 72px;
     width: 77px;
     top: 57px;
-    left: 87px;
+    left: 44px;
     padding-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
     top: 68px;
+    left: 111px;
   }
 }
 
@@ -62,14 +61,15 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    top: 59px;
-    left: 86px;
-    padding-top: 60px;
-    width: 86px;
+    top: 57px;
+    left: 43px;
+    width: 80px;
+    height: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 62px;
+    top: 70px;
+    left: 108px;
   }
 }
 
@@ -80,13 +80,17 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    top: 61px;
-    left: 96px;
+    top: 60px;
+    left: 54px;
     padding-top: 60px;
-    height: 92px;
-  }
+    height: 79px;
+    width: 66px;
 
-  //@media (min-width: @desktop-width) {}
+    @media (min-width: @desktop-width) {
+      top: 69px;
+      left: 115px;
+    }
+  }
 }
 
 .sublist__title {
@@ -102,6 +106,10 @@
     text-align: center;
     margin: 0;
     font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 167px;
   }
 }
 
@@ -120,5 +128,11 @@
     text-align: center;
     margin: 0 auto;
     width: 168px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    padding-bottom: 70px;
   }
 }

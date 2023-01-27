@@ -8,43 +8,47 @@
   <link rel="preload" href="font/ptsans.woff2" as="font">
   <link rel="preload" href="font/ptsansbold.woff" as="font">
   <link rel="preload" href="font/ptsansbold.woff2" as="font">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page-body">
   <div class="page-body__container">
-    <header class="header">
+    <header class="header header--nojs">
       <a href="index.html" class="header__logo">
         <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__button" aria-label="Открыть\закрыть меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link " href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://www.htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--opened ">
+        <button class="main-nav__button main-nav--nojs" aria-label="Открыть\закрыть меню"></button>
+        <div class="main-nav__container main-nav--nojs">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link " href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://www.htmlacademy.ru/">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <section class="info">
+        <h2 class="visually-hidden">Инфо секция</h2>
         <a href="#">
           <picture>
             <img class="info__img" src="./img/text-sedona.svg" alt="Надпись Седона ">
@@ -52,9 +56,10 @@
         </a>
       </section>
       <section class="benefits">
+        <h2 class="visually-hidden">секция бенефист</h2>
         <div class="benefits__container">
           <div class="benefits__top">
-            <h2 class="benefits__top-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+            <h1 class="benefits__top-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
             <p class="benefits__top-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <ul class="benefits__list">
@@ -63,7 +68,7 @@
                 <div class="benefits__wrapper benefits__wrapper--special blue">
                   <h3 class="benefits__item-title blue__title blue__title--triangle">НАСТОЯЩИЙ ГОРОДОК</h3>
                   <p class="benefits__item-number blue__number">-№1-</p>
-                  <p class="benefits__item-text  blue__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                  <p class="benefits__item-text  blue__text blue__text-special">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                 </div>
                 <a href="#" class="benefits__img-container">
                   <picture>
@@ -125,10 +130,10 @@
             <li class="benefits__item gray">
               <h2 class="benefits__item-title gray__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <p class="benefits__item-number gray__number">-№3-</p>
-              <p class="benefits__item-text  gray__text">ВСЕ ИНТЕРЕСУЮЩИЕ МЕСТА НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
+              <p class="benefits__item-text  gray__text">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТЬСЯ ОЧЕНЬ БЛИЗКО</p>
             </li>
             <li class="benefits__item gray">
-              <h2 class="benefits__item-title gray__title">КРАСИВАЯ ДОРОГА</h2>
+              <h2 class="benefits__item-title gray__title gray__title-special">КРАСИВАЯ ДОРОГА</h2>
               <p class="benefits__item-number gray__number">-№4-</p>
               <p class="benefits__item-text  gray__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
             </li>
@@ -141,6 +146,7 @@
         </div>
       </section>
       <section class="interested">
+        <h2 class="visually-hidden">секция интерестэд</h2>
         <div class="interested-container">
           <div class="interested-list">
             <div class="interested-item">
@@ -153,33 +159,35 @@
         </div>
       </section>
       <section class="map">
-        <map name="Седона" class="map-sedona">
-          <iframe
+        <h2 class="visually-hidden">секция карта</h2>
+        <div class="map__sedona">
+          <iframe class="map__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18175188258!2d-111.836423823421!3d34.854371424332236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2str!4v1671709001024!5m2!1sru!2str"
-            width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
+            width="100" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
-            <picture>
-              <source media="(min-width: 1200px)" type="image/webp"
-                srcset="./img/desktop/map-desktop1x.webp 1x, ./img/desktop/map-desktop2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp"
-                srcset="./img/tablet/map-tablet1x.webp 1x, ./img/tablet/map-tablet2x.webp 2x">
-              <source media="(min-width: 10px)" type="image/webp"
-                srcset="./img/mobile/map-mobile1x.webp 1x, ./img/mobile/map-mobile2x.webp 2x">
-              <source media="(min-width: 1200px)"
-                srcset="./img/desktop/map-desktop1x.jpg 1x, ./img/desktop/map-desktop2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/tablet/map-tablet1x.jpg 1x, ./img/tablet/map-tablet2x.jpg 2x">
-              <img class="benefits__img" src="./img/mobile/map-mobile1x.jpg" srcset="./img/mobile/map-mobile2x.jpg"
-                alt="map">
-            </picture>
           </iframe>
-        </map>
+        </div>
+        <div class="map__img-container">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp"
+              srcset="./img/desktop/map-desktop1x.webp 1x, ./img/desktop/map-desktop2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="./img/tablet/map-tablet1x.webp 1x, ./img/tablet/map-tablet2x.webp 2x">
+            <source media="(min-width: 10px)" type="image/webp"
+              srcset="./img/mobile/map-mobile1x.webp 1x, ./img/mobile/map-mobile2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="./img/desktop/map-desktop1x.jpg 1x, ./img/desktop/map-desktop2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/tablet/map-tablet1x.jpg 1x, ./img/tablet/map-tablet2x.jpg 2x">
+            <img class="map__img" src="./img/mobile/map-mobile1x.jpg" srcset="./img/mobile/map-mobile2x.jpg" alt="map">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__list">
         <h2 class="footer__list-title footer__list-title--position">#VISITSEDONA</h2>
-        <ul class="social__main-footer social">
+        <ul class="footer__list-social social">
           <li class="social__item button button--change-state">
             <span class="visually-hidden">
               Мы в Вконтакте
@@ -203,17 +211,16 @@
           </li>
         </ul>
         <div class="footer__list-item">
-          <a href="#" class="footer__academy-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link">
             <span class="footer__list-item-text">Разработано</span>
             <svg class="footer__academy-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#htmlacademy">
+              <use href="img/sprite.svg#htmlacademy" />
             </svg>
           </a>
         </div>
       </div>
-  </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
