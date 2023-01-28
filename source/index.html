@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="font/ptsans.woff" as="font">
-  <link rel="preload" href="font/ptsans.woff2" as="font">
-  <link rel="preload" href="font/ptsansbold.woff" as="font">
-  <link rel="preload" href="font/ptsansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsans.woff" as="font">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
 </head>
@@ -18,9 +18,9 @@
       <a href="index.html" class="header__logo">
         <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
       </a>
-      <nav class="main-nav main-nav--opened ">
-        <button class="main-nav__button main-nav--nojs" aria-label="Открыть\закрыть меню"></button>
-        <div class="main-nav__container main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__button" aria-label="Открыть\закрыть меню"></button>
+        <div class="main-nav__container">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active" href="index.html">
@@ -222,6 +222,7 @@
       </div>
     </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
