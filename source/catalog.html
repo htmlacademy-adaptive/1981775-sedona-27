@@ -4,70 +4,70 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preload" href="font/ptsans.woff" as="font">
-  <link rel="preload" href="font/ptsans.woff2" as="font">
-  <link rel="preload" href="font/ptsansbold.woff" as="font">
-  <link rel="preload" href="font/ptsansbold.woff2" as="font">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preload" href="./fonts/ptsans.woff" as="font">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <div class="page-body__container">
-    <header class="header">
+    <header class="header header--nojs">
       <a href="index.html" class="header__logo">
         <img class="header__logo-img" src="./img/logo-sedona.svg" alt="Логотип Седона">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__button" aria-label="Открыть\закрыть меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://www.htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://www.htmlacademy.ru/">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="catalog-info">
+      <h2 class="visually-hidden">секция инфо</h2>
       <div class="catalog-info__baner">
         <a href="#">
           <picture>
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="../img/desktop/text-sedona1x.svg 1x, ../img/desktop/text-sedona2x.svg 2x">
-              <source media="(min-width: 768px)"
-              srcset="../img/tablet/sedona1x.svg 1x, ../img/tablet/sedona2x.svg 2x">
-              <img class="catalog-info__baner-img"
-              src="../img/mobile/sedona1x.svg" srcset="../img/mobile/sedona2x.svg 2x"
-                alt="Надпись Седона ">
-            </picture>
+            <source media="(min-width: 1200px)"
+              srcset="../img/desktop/text-sedona1x.svg 1x, ../img/desktop/text-sedona2x.svg 2x">
+            <source media="(min-width: 768px)" srcset="../img/tablet/sedona1x.svg 1x, ../img/tablet/sedona2x.svg 2x">
+            <img class="catalog-info__baner-img" src="../img/mobile/sedona1x.svg" srcset="../img/mobile/sedona2x.svg 2x"
+              alt="Надпись Седона ">
+          </picture>
         </a>
       </div>
     </section>
-    </section>
-    <section class="foto__catalog">
+    <section class="foto">
       <div class="foto__container">
         <div class="foto__catalog-iner">
-          <h2 class="foto__catalog-title">Фото и видео</h2>
+          <h1 class="foto__catalog-title">Фото и видео</h1>
           <p class="foto__catalog-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике и экономике.
           </p>
@@ -76,13 +76,12 @@
           <li class="images__item images__item-first">
             <a href="#" class="images__item-img">
               <picture>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/desktop/space1-desktop1x.webp 1x, ./img/desktop/space1-desktop2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/webp"
-                    srcset="./img/tablet/space1-tablet1x.webp 1x, ./img/tablet/space1-tablet2x.webp 2x">
-                  <source media="(min-width: 10px)" type="image/webp"
-                    srcset="./img/mobile/photo-1-mobile1x.webp 1x, ./img/mobile/photo-1-mobile2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="./img/desktop/space1-desktop1x.webp 1x, ./img/desktop/space1-desktop2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="./img/tablet/space1-tablet1x.webp 1x, ./img/tablet/space1-tablet2x.webp 2x">
+                <source media="(min-width: 10px)" type="image/webp"
+                  srcset="./img/mobile/photo-1-mobile1x.webp 1x, ./img/mobile/photo-1-mobile2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/desktop/space1-desktop1x.jpg 1x, ./img/desktop/space1-desktop2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -102,13 +101,12 @@
           <li class="images__item images__item-second">
             <a href="#" class="images__item-img">
               <picture>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/desktop/photo-2-desktop1x.webp 1x, ./img/desktop/photo-2-desktop2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/webp"
-                    srcset="./img/tablet/photo-2-tablet1x.webp 1x, ./img/tablet/photo-2-tablet2x.webp 2x">
-                  <source media="(min-width: 10px)" type="image/webp"
-                    srcset="./img/mobile/photo-2-mobile1x.webp 1x, ./img/mobile/photo-2-mobile2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="./img/desktop/photo-2-desktop1x.webp 1x, ./img/desktop/photo-2-desktop2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="./img/tablet/photo-2-tablet1x.webp 1x, ./img/tablet/photo-2-tablet2x.webp 2x">
+                <source media="(min-width: 10px)" type="image/webp"
+                  srcset="./img/mobile/photo-2-mobile1x.webp 1x, ./img/mobile/photo-2-mobile2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/desktop/photo-2-desktop1x.jpg 1x, ./img/desktop/photo-2-desktop2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -119,7 +117,7 @@
             </a>
             <div class="images__item-container">
               <div class="images__item-container-second">
-                <h3 class="images__item-container-second-title">местная растилельность</h3>
+                <h3 class="images__item-container-second-title">местная растиельность</h3>
                 <p class="images__item-container-second-text">Автор фото: Сергей</p>
               </div>
               <span class="images__item-container-second-like">143</span>
@@ -128,13 +126,12 @@
           <li class="images__item images__item-second">
             <a href="#" class="images__item-img">
               <picture>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/desktop/photo-3-desktop1x.webp 1x, ./img/desktop/photo-3-desktop2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/webp"
-                    srcset="./img/tablet/photo-3-tablet1x.webp 1x, ./img/tablet/photo-3-tablet2x.webp 2x">
-                  <source media="(min-width: 10px)" type="image/webp"
-                    srcset="./img/mobile/photo-3-mobile1x.webp 1x, ./img/mobile/photo-3-mobile2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="./img/desktop/photo-3-desktop1x.webp 1x, ./img/desktop/photo-3-desktop2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="./img/tablet/photo-3-tablet1x.webp 1x, ./img/tablet/photo-3-tablet2x.webp 2x">
+                <source media="(min-width: 10px)" type="image/webp"
+                  srcset="./img/mobile/photo-3-mobile1x.webp 1x, ./img/mobile/photo-3-mobile2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/desktop/photo-3-desktop1x.jpg 1x, ./img/desktop/photo-3-desktop2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -154,13 +151,12 @@
           <li class="images__item images__item-second">
             <a href="#" class="images__item-img">
               <picture>
-                <picture>
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/desktop/photo-4-desktop1x.webp 1x, ./img/desktop/photo-4-desktop2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/webp"
-                    srcset="./img/tablet/photo-4-tablet1x.webp 1x, ./img/tablet/photo-4-tablet2x.webp 2x">
-                  <source media="(min-width: 10px)" type="image/webp"
-                    srcset="./img/mobile/photo-4-mobile1x.webp 1x, ./img/mobile/photo-4-mobile2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="./img/desktop/photo-4-desktop1x.webp 1x, ./img/desktop/photo-4-desktop2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="./img/tablet/photo-4-tablet1x.webp 1x, ./img/tablet/photo-4-tablet2x.webp 2x">
+                <source media="(min-width: 10px)" type="image/webp"
+                  srcset="./img/mobile/photo-4-mobile1x.webp 1x, ./img/mobile/photo-4-mobile2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/desktop/photo-4-desktop1x.jpg 1x, ./img/desktop/photo-4-desktop2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -187,18 +183,18 @@
           раз!</p>
         <div class="video__container">
           <picture>
-              <source media="(min-width: 1200px)" type="image/webp"
-                srcset="./img/desktop/video-desktop1x.webp 1x, ./img/desktop/video-desktop2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp"
-                srcset="./img/tablet/video-tablet1x.webp 1x, ./img/tablet/video-tablet2x.webp 2x">
-              <source media="(min-width: 10px)" type="image/webp"
-                srcset="./img/mobile/video-mobile1x.webp 1x, ./img/mobile/video-mobile2x.webp 2x">
+            <source media="(min-width: 1200px)" type="image/webp"
+              srcset="./img/desktop/video-desktop1x.webp 1x, ./img/desktop/video-desktop2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="./img/tablet/video-tablet1x.webp 1x, ./img/tablet/video-tablet2x.webp 2x">
+            <source media="(min-width: 10px)" type="image/webp"
+              srcset="./img/mobile/video-mobile1x.webp 1x, ./img/mobile/video-mobile2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="./img/desktop/video-desktop1x.jpg 1x, ./img/desktop/video-desktop2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/tablet/video-tablet1x.jpg 1x, ./img/tablet/video-tablet2x.jpg 2x">
-            <img class="images__item-img-img" class="benefits__img" src="./img/mobile/video-mobile1x.jpg"
-              srcset="./img/mobile/video-mobile2x.jpg" alt="Фото video">
+            <img class="video__list-img " src="./img/mobile/video-mobile1x.jpg" srcset="./img/mobile/video-mobile2x.jpg"
+              alt="Фото video">
           </picture>
           <button class="video__list-button">
             <span class="visually-hidden">Запуск видео</span>
@@ -210,7 +206,7 @@
       <div class="container">
         <div class="footer__list">
           <h2 class="footer__list-title footer__list-title--position">#VISITSEDONA</h2>
-          <ul class="social__main-footer social">
+          <ul class="footer__list-social social">
             <li class="social__item button button--change-state">
               <span class="visually-hidden">
                 Мы в Вконтакте
@@ -234,11 +230,11 @@
             </li>
           </ul>
           <div class="footer__list-item">
-            <a href="#" class="footer__academy-link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-link">
               <span class="footer__list-item-text">Разработано</span>
               <svg class="footer__academy-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <use href="img/sprite.svg#htmlacademy">
+                <use href="img/sprite.svg#htmlacademy" />
               </svg>
             </a>
           </div>
@@ -246,7 +242,7 @@
       </div>
     </footer>
   </div>
-  </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

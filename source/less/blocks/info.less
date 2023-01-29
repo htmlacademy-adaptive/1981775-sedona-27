@@ -1,5 +1,5 @@
 .info {
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/desktop/back-desktop1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -8,6 +8,16 @@
   text-align: center;
   padding-bottom: 74px;
   background-color: #747a81;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/desktop/back-desktop2x.jpg");
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 78px;
+    padding-bottom: 86px;
+  }
 }
 
 
@@ -25,8 +35,14 @@
 }
 
 .info__img {
+  padding-bottom: 6px;
+
   @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }

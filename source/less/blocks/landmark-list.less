@@ -1,0 +1,23 @@
+.landmark-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    width: 447px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 67px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 873px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 42px;
+  }
+}
+
+.landmark-list__item {
+  margin-bottom: 16px;
+}

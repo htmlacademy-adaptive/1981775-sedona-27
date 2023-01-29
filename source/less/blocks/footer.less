@@ -4,7 +4,7 @@
 }
 
 .footer__list-title--position {
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 33px;
   font-weight: 700;
   font-size: 21px;
@@ -31,13 +31,23 @@
     width: 768px;
     margin: 0 auto;
     justify-content: space-around;
-    height: 198px;
+    height: 247px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 125px;
+    padding-top: 73px;
+    padding-left: 1px;
+    padding-right: 2px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 286px;
+    height: 151px;
     gap: 26px;
+    padding-top: 129px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -87,4 +97,20 @@
 
 .footer__academy-link:active .footer__academy-svg {
   fill: #b3b3b3;
+}
+
+.footer__list-social {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+  padding-right: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-right: 7px;
+  }
 }
