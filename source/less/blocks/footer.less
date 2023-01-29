@@ -4,7 +4,7 @@
 }
 
 .footer__list-title--position {
-  padding-top: 56px;
+  padding-top: 25px;
   padding-bottom: 33px;
   font-weight: 700;
   font-size: 21px;
@@ -34,10 +34,20 @@
     height: 247px;
   }
 
+  @media (min-width: @tablet-width) {
+    height: 125px;
+    padding-top: 73px;
+    padding-left: 1px;
+    padding-right: 2px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 1200px;
     height: 151px;
     gap: 26px;
+    padding-top: 129px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -94,7 +104,6 @@
   list-style: none;
   gap: 6px;
   margin: 0;
-  //padding: 0;
   align-items: center;
   justify-content: center;
   padding-bottom: 34px;
@@ -102,5 +111,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-right: 7px;
   }
 }
