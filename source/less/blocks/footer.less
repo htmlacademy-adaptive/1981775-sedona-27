@@ -25,29 +25,27 @@
 }
 
 .footer__list {
+  padding-top: 15px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     width: 768px;
     margin: 0 auto;
     justify-content: space-around;
-    height: 247px;
-  }
-
-  @media (min-width: @tablet-width) {
     height: 125px;
-    padding-top: 73px;
-    padding-left: 1px;
-    padding-right: 2px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-right: 24px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    height: 151px;
+    height: 136px;
     gap: 26px;
-    padding-top: 129px;
+    padding-top: 16px;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 14px;
   }
 }
 
@@ -111,6 +109,88 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-right: -11px;
+  }
+}
+
+.footer__list-social-form {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+  padding-right: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
     margin-right: 7px;
+  }
+}
+
+.footer__list-social-catalog {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+  padding-right: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-right: 7px;
+  }
+}
+
+.footer__list-form {
+  padding-top: 31px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 125px;
+    padding-top: 122px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 186px;
+    gap: 26px;
+    padding-top: 62px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__list-catalog {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 125px;
+    padding-top: 73px;
+    padding-left: 1px;
+    padding-right: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 200px;
+    gap: 26px;
+    padding-top: 82px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
